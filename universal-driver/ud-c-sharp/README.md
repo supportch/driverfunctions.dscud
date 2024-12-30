@@ -12,7 +12,7 @@ description: Version 1.0
 
 ## [2. General programming guidelines](2.-general-programming-guidelines/)
 
-[     2.1 ISA Initialization and Exit Function Calls](broken-reference)
+[     2.1 ISA Initialization and Exit Function Calls](../../nvidia-solutions/samd51-1/software-user-manual/2.-general-programming-guidelines/2.1-initialization-and-exit-function-calls.md)
 
 [     2.2 PCI Initialization and Exit Function Calls](2.-general-programming-guidelines/2.2-pci-initialization-and-exit-function-calls.md)
 
@@ -22,7 +22,7 @@ description: Version 1.0
 
 [     3.2 Performing an AD Scan ](3.-common-task-reference/3.2.-performing-an-ad-scan.md)
 
-[     3.3 Performing a DA Conversion ](broken-reference)
+[     3.3 Performing a DA Conversion ](../../nvidia-solutions/samd51-1/software-user-manual/3.-common-task-reference/3.3-performing-a-da-conversion.md)
 
 [     3.4 Performing a DA Conversion Scan ](3.-common-task-reference/3.4.-performing-a-da-conversion-scan.md)
 

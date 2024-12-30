@@ -1,0 +1,10 @@
+# 7.5	Appendix E: Steps to test OS Product key License:
+
+\
+1\. Open command prompt with Administrative privilege.
+
+2\. Change current working directory to **c:\windows\system32** using CD command.
+
+3\. Give the below mentioned command:
+
+&#x20;   **Cscript.exe** **slmgr.vbs –dli**

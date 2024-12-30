@@ -46,18 +46,7 @@ The following data structures are used in the SATURN driver functions.
 
 ### **SATURNADINTSTATUS**
 
-|                |     |                                                                                                                                                                 |
-| -------------- | --- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| OpStatus       | int | 0 = Interrupts not running, 1 = Interrupts running                                                                                                              |
-| NumConversions | int | Number of conversions since interrupts started                                                                                                                  |
-| BufferPtr      | int | Position in A/D storage buffer, used in continuous mode when buffer is being repetitively overwritten                                                           |
-| Cycle          | int | 0 = one-shot operation, 1 = continuous operation                                                                                                                |
-| FIFODepth      | int |  Current FIFO depth pointer                                                                                                                                     |
-| UF             | int | 0 = no underflow, 1 = FIFO underflow (attempt to read was made when FIFO was empty)                                                                             |
-| OF             | int | 0 = no overflow, 1 = FIFO overflow (attempt to write into FIFO when FIFO was full)                                                                              |
-| FF             | int | 0 = FIFO not full, 1 = FIFO is full                                                                                                                             |
-| TF             | int | 0 = number of A/D samples in FIFO is less than the programmed threshold, 1 = number of A/D samples in FIFO is equal to or greater than the programmed threshold |
-| EF             | int | 0 = FIFO has unread data in it, 1 = FIFO is empty                                                                                                               |
+<table><thead><tr><th width="210.33333333333331"></th><th></th><th></th></tr></thead><tbody><tr><td>OpStatus   </td><td>int</td><td>0 = Interrupts not running, 1 = Interrupts running</td></tr><tr><td>NumConversions</td><td>int</td><td>Number of conversions since interrupts started</td></tr><tr><td>BufferPtr   </td><td>int</td><td>Position in A/D storage buffer, used in continuous mode when buffer is being repetitively overwritten</td></tr><tr><td>Cycle  </td><td>int</td><td>0 = one-shot operation, 1 = continuous operation</td></tr><tr><td>FIFODepth   </td><td>int</td><td> Current FIFO depth pointer</td></tr><tr><td>UF</td><td>int</td><td>0 = no underflow, 1 = FIFO underflow (attempt to read was made when FIFO was empty)</td></tr><tr><td>OF</td><td>int</td><td>0 = no overflow, 1 = FIFO overflow (attempt to write into FIFO when FIFO was full)</td></tr><tr><td>FF</td><td>int</td><td>0 = FIFO not full, 1 = FIFO is full</td></tr><tr><td>TF</td><td>int</td><td>0 = number of A/D samples in FIFO is less than the programmed threshold, 1 = number of A/D samples in FIFO is equal to or greater than the programmed threshold</td></tr><tr><td>EF</td><td>int</td><td>0 = FIFO has unread data in it, 1 = FIFO is empty</td></tr></tbody></table>
 
 ### **SATURNFIFO**
 

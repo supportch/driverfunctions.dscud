@@ -1,0 +1,2 @@
+# 6	Reinstalling Linux
+

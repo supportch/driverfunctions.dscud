@@ -1,0 +1,23 @@
+# 6.1	To add driver to an offline image by using DISM tool
+
+* To mount the offline Windows image. For example, create another folder as offline in test folder and type the below command.
+
+&#x20;       **Dism /Mount-Image /ImageFile:C:\test\images\install.wim /Name:"Windows Drive" /MountDir:C:\test\offline**
+
+* To add a specific driver to the image. For example, create a folder as drivers in C directory and put the driver inf file. Provide the below command.
+
+&#x20;       **Dism /Image:C:\test\offline /Add-Driver /Driver:C:\drivers\mydriver.inf**
+
+* Multiple drivers can be added on one command line if you specify a folder instead of an .inf file. To install all of the drivers in a folder and all its subfolders use the /recurse option. For example,
+
+&#x20;       **Dism /Image:C:\test\offline /Add-Driver /Driver:c:\drivers /Recurse**
+
+* To install an unsigned driver, use /Force Unsigned to override the requirement that drivers installed on X64-based computers must have a digital signature. For example,
+
+&#x20;       **Dism /Image:C:\test\offline /Add-Driver /Driver:C:\drivers\mydriver.inf /ForceUnsigned**
+
+* Review the list of third-party driver (.inf) files in the Windows image. Drivers added to the Windows image are named Oem\*.inf. This is to guarantee unique naming for new drivers added to the computer. For example, the files MyDriver1.inf and MyDriver2.inf are renamed Oem0.inf and Oem1.inf. For example, type:
+
+&#x20;      **Dism /Image:C:\test\offline /Get-Drivers**
+
+* Commit the changes and unmount the image. For example, type: **Dism /Unmount-Image /MountDir:C:\test\offline /Commit**
