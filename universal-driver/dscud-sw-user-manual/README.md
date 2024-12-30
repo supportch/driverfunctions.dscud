@@ -89,7 +89,3 @@ description: v 8.2.0.
 ## [13. Index](13.-index/)
 
 ## [14. Universal Driver APIs](14.-universal-driver-apis/)
-
-{% content-ref url="../saturn-driver-function-definition/" %}
-[saturn-driver-function-definition](../saturn-driver-function-definition/)
-{% endcontent-ref %}
